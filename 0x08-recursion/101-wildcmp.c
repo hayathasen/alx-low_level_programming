@@ -40,7 +40,7 @@ int strlen_no_wilds(char *str)
  */                                                                                                                                   
 void iterate_wild(char **wildstr)                                                                                                     
 {                                                                                                                                     
-         if (**wildstr == '*')                                                                                                         
+        if (**wildstr == '*')                                                                                                         
         {                                                                                                                             
                 (*wildstr)++;                                                                                                         
                 iterate_wild(wildstr);                                                                                                
@@ -95,4 +95,5 @@ int wildcmp(char *s1, char *s2)
                 return (0);                                                                                                           
                                                                                                                                       
         return (wildcmp(++s1, ++s2));                                                                                                 
-}
+}                                                                                                 
+                      
